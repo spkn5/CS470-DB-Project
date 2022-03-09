@@ -1,0 +1,32 @@
+-- Question 1 Number 1
+-- σ raceType = 1 (Race)
+
+-- Question 1 Number 2
+-- πRace.name, RaceType.RTypeID (Race ⨝ Race.Raceid > RaceType.RTypeID RaceType)
+
+-- Question 1 Number 3 
+-- πRTypeID,Type (σType='5k' RaceType)
+
+-- Question 1 number 4 
+-- πRace.Raceid, Race.name, RaceType.Type (Race⨝Race.Raceid = RaceType.RTypeID RaceType)
+
+
+-- Question 2 Number 1
+-- Runner ∪ Cycler
+
+
+-- Question 2 Number 2
+-- Runner ∩ Cycler
+
+
+-- Question 2 Number 3 
+-- Runner - Cycler
+
+-- Question 3
+-- A / B
+
+-- Question 4 
+-- πShelter.sname,Pet.petname (σPet.pettype='dog' and Shelter.sname ='wayside' (σ Pet.shelterID = Shelter.shelterId ( Shelter ⨯ Pet)))
+
+-- Question 5 
+-- πShelter.sname,Pet.petname (( πshelterId,sname σ( sname='wayside') Shelter) ⨝ shelterId=shelterID (πpetname,shelterID σ ( pettype='dog' ) Pet ))
